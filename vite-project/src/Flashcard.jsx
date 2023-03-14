@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 
 
-
 function Flashcard(props) {
   return (
     <div className={`flashcard ${props.isFlipped ? 'flipped' : ''}`} onClick={props.onCardClick}>
@@ -12,8 +11,12 @@ function Flashcard(props) {
         </div>
         <div className="flashcard-back">
           <h2>{props.back}</h2>
+          
+           
         </div>
+        
       </div>
+      
     </div>
   );
 }
